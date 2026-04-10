@@ -5,21 +5,40 @@ ul {
 
     margin-top: 40px;
 
+    max-height: 195px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--color-brand);
+        border-radius: 100px;
+    }
+
+
     li {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: var(--background-secondary);
-        padding: 8px 12px;
+        padding: 10px 14px;
         border-radius: 12px;
-        height: 30px;
+
+        .container-chek {
+            flex-grow: 1;
+            cursor: pointer;
+        }
 
         .container-chek {
             display: flex;
             align-items: center;
             gap: 12px;
 
-            & p {
+            .paragraph {
                 font-size: var(--paragraph);
                 color: var(--content-secondary);
             }
@@ -31,7 +50,7 @@ ul {
             height: 16px;
             width: 16px;
             border-radius: 6px;
-            
+
             &:hover {
                 border: 1px solid var(--border-hover);
                 cursor: pointer;
@@ -53,4 +72,11 @@ ul {
         }
     }
 
+    .updateCheck {
+        background-color: #eaeaea;
+
+        .paragraph {
+            text-decoration: line-through;
+        }
+    }
 }

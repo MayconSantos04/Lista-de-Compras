@@ -24,55 +24,68 @@
                 <img src="/assets/icons/link button.svg" alt="Voltar">
                 <h1>Compras da semana</h1>
             </div>
+
             <form>
-                <label for="text"></label>
                 <input id="text" type="text" placeholder="Adicione um novo item">
                 <button id="btn">
                     Adicionar item
                 </button>
             </form>
+
             <div class="lista">
                 <ul id="ul">
                     <li>
-                        <div class="container-chek">
-                            <input type="checkbox">
-                            <p>Pão de forma</p>
-                        </div>
+                        <label class="container-chek">
+                            <input class="checkbox" type="checkbox">
+                            <p class="paragraph">Pão de forma</p>
+                        </label>
                         <button class="btn-lixo">
-                            <img src="/assets/icons/Frame.svg" alt="Lixeira">
+                            <img class="imgLixo" src="/assets/icons/Frame.svg" alt="Lixeira">
                         </button>
                     </li>
                     <li>
-                        <div class="container-chek">
-                            <input type="checkbox">
-                            <p>Café preto</p>
-                        </div>
+                        <label class="container-chek">
+                            <input class="checkbox" type="checkbox">
+                            <p class="paragraph">Café preto</p>
+                        </label>
                         <button class="btn-lixo">
-                            <img src="/assets/icons/Frame.svg" alt="Lixeira">
+                            <img class="imgLixo" src="/assets/icons/Frame.svg" alt="Lixeira">
                         </button>
                     </li>
                     <li>
-                        <div class="container-chek">
-                            <input type="checkbox">
-                            <p>Suco de laranja</p>
-                        </div>
+                        <label class="container-chek">
+                            <input class="checkbox" type="checkbox">
+                            <p class="paragraph">Suco de laranja</p>
+                        </label>
                         <button class="btn-lixo">
-                            <img src="/assets/icons/Frame.svg" alt="Lixeira">
+                            <img class="imgLixo" src="/assets/icons/Frame.svg" alt="Lixeira">
                         </button>
                     </li>
                     <li>
-                        <div class="container-chek">
-                            <input type="checkbox">
-                            <p>Bolacha</p>
-                        </div>
+                        <label class="container-chek">
+                            <input class="checkbox" type="checkbox">
+                            <p class="paragraph">Bolacha</p>
+                        </label>
                         <button class="btn-lixo">
-                            <img src="/assets/icons/Frame.svg" alt="Lixeira">
+                            <img class="imgLixo" src="/assets/icons/Frame.svg" alt="Lixeira">
                         </button>
                     </li>
                 </ul>
+
+                <span class="container-warning hidden">
+                    <div class="container-ajuste">
+                        <img src="/assets/icons/Icon.svg" alt="">
+                        <p>O item foi removido da lista</p>
+                    </div>
+                    <button class="btn-delete">
+                        <img src="/assets/icons/delete-small.svg" alt="Delete">
+                    </button>
+                </span>
             </div>
         </main>
     </div>
+
+    <script src="/script.js"></script>
 
 </body>
 

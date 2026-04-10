@@ -1,21 +1,18 @@
 form {
-    width: 627px;
-    height: 44px;
+    width: 100%;
     margin-top: 44px;
+    display: flex;
+    gap: 16px;
 
     display: flex;
     flex-direction: row;
-    
+
     & input {
-        margin-right: 16px;
+        flex: 1;
+        min-width: 0;
         padding: 11px 18px;
         border-radius: 12px;
         border: 2px solid var(--border-primary);
-        
-        flex: 1;
-        height: 100%;
-        box-sizing: border-box;
-
         font-size: var(--label);
 
         &::placeholder {
@@ -42,11 +39,26 @@ form {
         height: 44px;
         cursor: pointer;
     }
-    
+
     #btn:hover {
         background-color: var(--color-brand-hover);
         transition: .4s;
     }
 
-    
+
+}
+
+@media (max-width: 399px) {
+    form {
+        flex-direction: column;
+        height: auto;
+    }
+
+    form input, #btn {
+        margin-right: 0;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
 }

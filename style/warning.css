@@ -1,0 +1,41 @@
+.container-warning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: var(--color-danger);
+    border-radius: 12px;
+    
+    margin-top: 36px;
+    padding: 12px;
+
+    .container-ajuste {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 18.68;
+            height: auto;
+            margin-right: 8px;
+        }
+
+        p {
+            font-size: var(--label);
+            color: var(--always-white);
+        }
+    }
+
+    .btn-delete {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        img {
+            margin-right: 8px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
