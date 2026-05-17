@@ -58,7 +58,7 @@ ul {
 
             &:checked {
                 background-color: var(--color-brand);
-                background-image: url(/assets/icons/Vector.svg);
+                background-image: url(assets/icons/Vector.svg);
                 background-size: 10px;
                 background-position: center;
                 background-repeat: no-repeat;
