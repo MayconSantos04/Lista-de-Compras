@@ -32,7 +32,7 @@ btn.addEventListener("click", (event) => {
     const creatParagraph = document.createElement("p");
     const creatBtnLixo = document.createElement("button");
     const creatImage = document.createElement("img");
-    creatImage.src = "/assets/icons/Frame.svg";
+    creatImage.src = "assets/icons/Frame.svg";
     creatImage.alt = "Lixeira";
 
     creatParagraph.textContent = input.value;
